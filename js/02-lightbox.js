@@ -11,9 +11,8 @@ const listImages = galleryItems
   .join("");
 galleryList.insertAdjacentHTML("beforeend", listImages);
 
-let gallery = new SimpleLightbox(".gallery a", {
+new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionPosition: "bottom",
   captionDelay: 250,
 });
-gallery.on("show.simplelightbox");
